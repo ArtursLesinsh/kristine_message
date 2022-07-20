@@ -30,6 +30,7 @@ p {
   font-family: Cormorant Garamond;
   font-size: 1.375em;
   padding: 1.25em;
+  color: #414040;
 }
 
 .header > img {
@@ -51,6 +52,7 @@ p {
 .about_me > h1 {
   font-family: Cormorant Garamond;
   font-size: 3em;
+  color: #414040;
 }
 
 .about_me > img {
@@ -70,4 +72,11 @@ p {
   text-align: justify;
   font-family: Cormorant Garamond;
   font-size: 1.125em;
+  color: #414040;
+}
+
+p > a {
+  text-decoration: none;
+  font-family: Cormorant Garamond;
+  color: #414040;
 }/*# sourceMappingURL=style.css.map */

@@ -33,6 +33,7 @@ p {
     font-family: Cormorant Garamond;
     font-size: pxToRem(22);
     padding: pxToRem(20);
+    color: #414040;
     
 }
 
@@ -43,7 +44,6 @@ p {
 }
 
 // About me 
-
 .about_me {
     max-width: 1100px;
     box-sizing: border-box;
@@ -57,6 +57,7 @@ p {
 .about_me > h1 {
     font-family: Cormorant Garamond;
     font-size: pxToRem(48);
+    color: #414040;
 }
 
 .about_me > img {
@@ -76,4 +77,11 @@ p {
     text-align: justify;
     font-family: Cormorant Garamond;
     font-size: pxToRem(18);
+    color: #414040;
+}
+
+p > a {
+    text-decoration: none;
+    font-family: Cormorant Garamond;
+    color: #414040;
 }
