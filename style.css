@@ -14,12 +14,13 @@ p {
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  flex-direction: column;
   margin: auto;
+  flex-direction: column;
 }
 
 .nav_bar {
-  max-width: 1000px;
+  max-width: 900px;
+  width: 100%;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -43,11 +44,10 @@ p {
 .about_me {
   max-width: 1100px;
   box-sizing: border-box;
-  margin: auto;
   display: flex;
   align-items: center;
+  margin: auto;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .about_me > h1 {
@@ -66,7 +66,7 @@ p {
 }
 
 .about_me_text {
-  margin: 2.5em 1.25em 1.25em;
+  margin: 1.875em 1.25em 1.25em;
 }
 
 .about_me_text > p {
@@ -84,12 +84,45 @@ p > a {
 }
 
 .massage_type {
-  max-width: 1000px;
+  max-width: 1100px;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
 }
 
 .massage_type > h2 {
   font-size: 2em;
   color: #414040;
   font-family: Cormorant Garamond;
+}
+
+.massage_text {
+  margin: 0.3125em 1.25em;
+  text-align: justify;
+}
+
+.massage_text > p {
+  color: #414040;
+  font-family: Cormorant Garamond;
+  font-size: 1.125em;
+}
+
+p > strong {
+  color: #414040;
+  font-family: Cormorant Garamond;
+  font-size: 1.125em;
+}
+
+ul > li {
+  color: #414040;
+  font-family: Cormorant Garamond;
+  font-size: 1.125em;
+}
+
+li > strong {
+  color: #414040;
+  font-family: Cormorant Garamond;
+  font-size: 1.125em;
 }/*# sourceMappingURL=style.css.map */

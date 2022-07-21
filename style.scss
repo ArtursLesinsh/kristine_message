@@ -9,6 +9,15 @@
     color: #414040;
     font-family: Cormorant Garamond;
 }
+
+@mixin container() {
+    max-width: 1100px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
   
 body {
     margin: auto;
@@ -20,15 +29,11 @@ p {
     text-indent: 25px;
 }
 .header {
-    max-width: 1100px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: auto;
+    @include container();
 }
 .nav_bar {
-    max-width: 1000px;
+    max-width: 900px;
+    width: 100%;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -49,13 +54,7 @@ p {
 
 // About me 
 .about_me {
-    max-width: 1100px;
-    box-sizing: border-box;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+    @include container();
 }
 
 .about_me > h1 {
@@ -73,7 +72,7 @@ p {
 }
 
 .about_me_text {
-    margin: pxToRem(40) pxToRem(20) pxToRem(20);
+    margin: pxToRem(30) pxToRem(20) pxToRem(20);
 }
 
 .about_me_text > p {
@@ -90,11 +89,34 @@ p > a {
 //massage type
 
 .massage_type {
-    max-width: 1000px;
-    box-sizing: border-box;
+    @include container();
 }
 
 .massage_type > h2 {
     font-size: pxToRem(32);
     @include textColor();
+}
+
+.massage_text {
+    margin: pxToRem(5) pxToRem(20);
+    text-align: justify
+}
+
+.massage_text > p {
+    @include textColor();
+    font-size: pxToRem(18)
+}
+p > strong {
+    @include textColor();
+    font-size: pxToRem(18)
+}
+
+ul > li {
+    @include textColor();
+    font-size: pxToRem(18)
+}
+
+li > strong {
+    @include textColor();
+    font-size: pxToRem(18)
 }
