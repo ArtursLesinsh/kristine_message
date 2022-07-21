@@ -210,4 +210,19 @@ th {
 
 .swiper-button-next {
   color: #FFCCB4;
+}
+
+.contact {
+  max-width: 900px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }/*# sourceMappingURL=style.css.map */
