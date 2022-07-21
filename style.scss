@@ -163,3 +163,34 @@ th {
     width: 640px;
     max-width: 100%;
 }
+
+//Photos
+
+.photos {
+    @include container();
+}
+
+.photos > h2 {
+    font-size: pxToRem(32);
+    @include textColor();
+}
+
+.swiper {
+    width: 800px;
+    max-width: 100%;
+    height: 600px;
+  }
+
+.swiper-slide  > img{
+    width: 800px;
+    max-width: 100%;
+    height: 600px;
+}
+
+.swiper-button-prev {
+    color: #FFCCB4;
+  }
+
+  .swiper-button-next {
+    color: #FFCCB4;
+  }
