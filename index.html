@@ -12,20 +12,21 @@
     <title>Massage</title>
 </head>
 <body>
+    <div class="toogle"></div>
     <div class="header">
         <div class="nav_bar">
-            <a href="">О мастере</a>
-            <a href="">Массаж</a>
-            <a href="">Цены</a>
-            <a href="">Фото галерея</a>
-            <a href="">Контакты</a>
+            <a href="#about_master">О мастере</a>
+            <a href="#massage">Массаж</a>
+            <a href="#price">Цены</a>
+            <a href="#gallery">Фото галерея</a>
+            <a href="#contacts">Контакты</a>
         </div>
         <img src="img/header/logo_transparent1.png" alt="">
     </div>
 <!-- About master -->
-    <section class="about_me">
+    <section class="about_me" id="about_master">
         <h1>О мастере</h1>
-        <img src="img/about_me/kristina_1.png" alt="">
+        <img  src="img/about_me/kristina_1.png" alt="">
         <div class="about_me_text">
             <p>Всю свою жизнь я проработала в сфере медицины, но со временем мне захотелось начать помогать людам самой,поэтому подумав, 
                 я решила сменить профессию и пойти обучаться “искусству” массажа, потому-что ни как иначе это не назовёшь.
@@ -45,7 +46,7 @@
         </div>
     </section>
 <!-- Massage type -->
-    <section class="massage_type">
+    <section class="massage_type" id="massage">
         <h2>Виды массажа</h2>
         <div class="massage_text">
             <p> 
@@ -98,7 +99,7 @@
         </div>
     </section>
 <!-- Price list -->
-    <section class="price_list">
+    <section class="price_list" id="price">
         <h2>Цены/подарочные карты</h2>
         <strong class="classic">Классические массажи</strong>
         <table class="price_table">
@@ -181,8 +182,9 @@
         </p>
         <img src="img/price_list/annie-spratt-Yu-PUYHMVlg-unsplash.jpg" alt="">
     </section>
+
     <!-- Photos -->
-    <section class="photos">
+    <section class="photos" id="gallery">
         <h2>Фото галерея</h2>
         <div class="swiper">
             <div class="swiper-wrapper">
@@ -197,17 +199,35 @@
           </div>
     </section>
 
-    <footer class="contact">
+    <!-- Contacts -->
+    <div id="contacts">
+        <h2>Контакты</h2>
+    </div>
+    <footer class="contact" >
         <div class="numbers">
-            <a href="massageoclock_riga" target="_blank"><img src="img/footers/instagram64.png" alt=""></a>
-            <a href=""><img src="img/footers/phone-call64.png" alt=""><p> +371 29963544</p></a>
-            <a href="wa.me/37129963544" target="_blank"><img src="img/footers/whatsapp64.png" alt=""></a>
+            <a class="icon" href="massageoclock_riga" target="_blank"><img src="img/footers/instagram32.png" alt=""><p>massageoclock_riga</p></a>
+            <a class="icon" href=""><img src="img/footers/phone-call32.png" alt=""><p>+371 29963544</p></a>
+            <a class="icon" href="wa.me/37129963544" target="_blank"><img src="img/footers/whatsapp32.png" alt=""><p>https://wa.me/37129963544</p> </a>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.5819674190343!2d24.113977215977663!3d56.95596308089227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfce443a8eb3%3A0xd90187c906f95498!2sSkolas%20iela%202%2C%20Centra%20rajons%2C%20R%C4%ABga%2C%20LV-1010!5e0!3m2!1sen!2slv!4v1658419932343!5m2!1sen!2slv" 
-        width="400" height="300" style="border:0;" allowfullscreen="" 
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </footer>
-
+        <div class="contact_address">
+            <ul>
+                <li>Skolas iela 2</li>
+                <li>Centra rajons</li>
+                <li>Rīga</li>
+                <li>LV-1010</li>
+                <li>Latvia</li>
+            </ul>
+        </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.5819674190343!2d24.113977215977663!3d56.95596308089227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfce443a8eb3%3A0xd90187c906f95498!2sSkolas%20iela%202%2C%20Centra%20rajons%2C%20R%C4%ABga%2C%20LV-1010!5e0!3m2!1sen!2slv!4v1658419932343!5m2!1sen!2slv" 
+                    width="400" height="300" style="border:0;" allowfullscreen="" 
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+    </footer>
+    <a class="arrow_top" href="#"> <img src="img/footers/back-to-top32.png" alt=""> </a>
+    
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    
+  
 </body>
 </html>

@@ -2,13 +2,14 @@
 body {
   margin: auto;
   min-width: 360px;
-  background: url(img/header/eberhard-grossgasteiger-S-2Ukb_VqpA-unsplash.jpg);
+  background-color: #D46A6A;
 }
 
 p {
   text-indent: 25px;
 }
 
+/* -- Navigation bar -- */
 .header {
   max-width: 1100px;
   box-sizing: border-box;
@@ -41,6 +42,7 @@ p {
   max-width: 100%;
 }
 
+/* -- About master -- */
 .about_me {
   max-width: 1100px;
   box-sizing: border-box;
@@ -83,6 +85,7 @@ p > a {
   font-family: Cormorant Garamond;
 }
 
+/* -- Massage type -- */
 .massage_type {
   max-width: 1100px;
   box-sizing: border-box;
@@ -127,6 +130,7 @@ li > strong {
   font-size: 1.125em;
 }
 
+/* -- Price list -- */
 .price_list {
   max-width: 1100px;
   box-sizing: border-box;
@@ -172,11 +176,12 @@ th {
 }
 
 .price_list > img {
-  margin: 0.9375em;
+  margin: 1.25em;
   width: 640px;
   max-width: 100%;
 }
 
+/* -- Photos -- */
 .photos {
   max-width: 1100px;
   box-sizing: border-box;
@@ -212,17 +217,48 @@ th {
   color: #FFCCB4;
 }
 
+/* -- Footer -- */
+#contacts > h2 {
+  font-size: 1.625em;
+  color: #414040;
+  font-family: Cormorant Garamond;
+  text-align: center;
+}
+
 .contact {
+  border-top: 1px solid #414040;
   max-width: 900px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   margin: auto;
   justify-content: space-between;
+  padding: 50px 0;
 }
 
 .numbers {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.icon {
+  display: flex;
+  margin: 0.3125em;
+  text-decoration: none;
+  align-items: center;
+  color: #414040;
+}
+
+/* -- Arrow top -- */
+.arrow_top {
+  display: inline-block;
+  position: fixed;
+  right: 1.25em;
+  bottom: 2.8125em;
+}
+
+.arrow_top > img {
+  width: 45px;
+  height: 45px;
 }/*# sourceMappingURL=style.css.map */
