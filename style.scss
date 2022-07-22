@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,400&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 @function pxToRem($to, $size: 16) {
     @return $to / $size + 0em;
   }
@@ -32,8 +36,19 @@ p {
 /* -- Navigation bar -- */
 
 .header {
-    @include container();
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    position: sticky;
+    height: pxToRem(80);
+    top: 0;
+    z-index: 1;
+    background-color: #D46A6A;
+    border-bottom: 3px solid #801515;
 }
+
 .nav_bar {
     max-width: 900px;
     width: 100%;
@@ -43,6 +58,7 @@ p {
     text-align: center;
     margin: auto;
 }
+
 .nav_bar > a {
     text-decoration: none;
     font-size: pxToRem(22);
@@ -50,7 +66,11 @@ p {
     @include textColor();
 }
 
-.header > img {
+.header_img {
+    @include container();
+}
+
+.header_img > img {
     width: 750px;
     max-width: 100%;
 }
@@ -183,6 +203,7 @@ th {
     width: 800px;
     max-width: 100%;
     height: 600px;
+    z-index: 0;
   }
 
 .swiper-slide  > img{
@@ -201,21 +222,29 @@ th {
 
   /* -- Footer -- */
 
+  #contacts {
+    @include container();
+  }
+
+  hr {
+    width: 1100px;
+    border: 1px solid #414040;
+  }
   #contacts > h2 {
     font-size: pxToRem(26);
     @include textColor();
     text-align: center;
+    max-width: 500px;
   }
 
   .contact {
-    border-top: 1px solid #414040;
-    max-width: 900px;
+    max-width: 500px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     margin: auto;
     justify-content: space-between;
-    padding: 50px 0;
+    padding: pxToRem(40) 0;
   }
 
   .numbers {
@@ -231,6 +260,18 @@ th {
     align-items: center;
     color: #414040;
   } 
+
+/* -- Copyright -- */
+
+  .copyright {
+    @include container();
+  }
+
+  .copyright > p {
+    font-size: pxToRem(14);
+    padding: pxToRem(20);
+    @include textColor();
+  }
 
 /* -- Arrow top -- */
 
