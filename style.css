@@ -28,6 +28,7 @@ p {
   justify-content: center;
   align-items: center;
   top: 0;
+  height: 5em;
   width: 100%;
   z-index: 10;
   left: 50%;
